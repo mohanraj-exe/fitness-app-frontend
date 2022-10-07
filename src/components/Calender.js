@@ -1,21 +1,15 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import { useLocation } from 'react-router-dom';
 
 const Calender = () => {
-  const [date, setDate] = useState(new Date());
-  const {search} = useLocation();
-  const sp = new URLSearchParams(search)
-  const startDate = sp.get(date[0])
-  const endDate = sp.get(date[1])
 
-  useEffect(() =>{
+    const [date, setDate] = useState(new Date());
     const fetchData = async () => {
-  
-      if (startDate && endDate) {
-        const response = await fetch(`/api/user/workout/search?startDate=${startDate}&endDate=${endDate}`,{method: "GET"}
-        );
+   
+      if (date[0] && date[1]) {
+        const response = await fetch(`/api/user/workout/search?startDate=${date[0]}&endDate=${date[1]}`,
+        {method: "GET"});
   
         const json = await response.json();
         if (response.ok) {
@@ -23,8 +17,6 @@ const Calender = () => {
         }
       }
     }
-    fetchData();
-  },[startDate, endDate])
 
   return (
     <>
