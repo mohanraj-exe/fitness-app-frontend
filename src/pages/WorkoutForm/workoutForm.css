@@ -8,9 +8,31 @@ body{
 }
 
 .header{
-    color: #333;
+    width: 100%;
     border: 1px solid lightgray;
     padding: 5px;
+}
+
+.nav-info{
+    margin: 5px;
+    padding: 5px;
+    width: 500px;
+}
+
+.save-info{
+    margin: 5px;
+    padding: 5px;
+    width: 900px;
+}
+
+.click-here{
+    height: 40px;
+    width: 100px;
+    border-radius: 40px;
+    color: white;
+    background-color: #006edc;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 .row:after {
@@ -37,3 +59,10 @@ body{
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+.form-container{
+    box-shadow: 0px 0px 14px 3px #006edc;
+}
+
+input,textarea{
+    border-color: #006edc;
+}
