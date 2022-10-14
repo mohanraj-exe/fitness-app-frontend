@@ -4,17 +4,6 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import styled from "styled-components";
-
-const Button = styled.button`
-  height: 35px;
-  width: 80px;
-  color: white;
-  background-color: #006edc;
-  border-radius: 35px;
-  font-size: 15px;
-  cursor: pointer;
-`;
 
 const Home = () => {
   const [date, setDate] = useState(new Date());
@@ -38,13 +27,13 @@ const Home = () => {
   return (
     <>
       <header className="header">
-        <h1>Workout Log App</h1>
+      <h1>Workout Log App</h1>
       </header>
 
       <div className="nav-info">
         <span>
           Want to save your today's workout?&nbsp;
-          <Link to="/workoutForm"><button className="click-here">Click Here!</button></Link>
+          <Link to="/workoutForm"><button className="click-here hover-style">Click Here!</button></Link>
         </span>
       </div>
 
@@ -118,7 +107,7 @@ const Home = () => {
             </p>
           )}
 
-          <Button onClick={fetchData}>Search</Button>
+          <button onClick={fetchData} className="search-button hover-style">Search</button>
         </div>
       </div>
     </>

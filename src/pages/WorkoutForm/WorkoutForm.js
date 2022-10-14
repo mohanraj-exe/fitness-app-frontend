@@ -92,7 +92,7 @@ const WorkoutForm = () => {
 
       <div className="nav-info">
         <span>
-          Want to get your saved workouts?&nbsp;<Link to="/"><button className="click-here">Click Here!</button></Link>
+          Want to get your saved workouts?&nbsp;<Link to="/"><button className="click-here hover-style">Click Here!</button></Link>
         </span>
       </div>
 

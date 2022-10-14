@@ -33,6 +33,7 @@ body{
     background-color: #006edc;
     font-size: 15px;
     cursor: pointer;
+    border: none;
 }
 
 .row:after {

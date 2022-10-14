@@ -21,6 +21,7 @@ body{
     background-color: #006edc;
     font-size: 15px;
     cursor: pointer;
+    border: none;
 }
 
 .search-info{
@@ -80,5 +81,20 @@ tr:nth-child(even){
     color: white;
 }
 
+.search-button{
+    height: 35px;
+    width: 80px;
+    color: white;
+    background-color: #006edc;
+    border: none;
+    border-radius: 35px;
+    font-size: 15px;
+    cursor: pointer;
+}
 
+.hover-style:hover{
+    color:#006edc;
+    background-color: white;
+    border: 1px solid #006edc;
+}
 
